@@ -69,35 +69,45 @@ Complete the following tasks and assign the results to the specified variables. 
 let inputString = "  Welcome to the Coding Bootcamp! Learn JavaScript today.  ";
 
 // 1. Searching
-let hasJavaScript; // Your code here
-let codingPosition; // Your code here
-let startsWithWelcome; // Your code here
+let hasJavaScript; 
+console.log(text.includes("JavaScript")); // true
+let codingPosition; 
+console.log(text.indexOf("coding")); // 15
+let startsWithWelcome; 
+console.log(text.startsWith("Welcome")); // false
 let endsWithToday; // Your code here
-
+console.log(text.endsWith("today.")); // true
 // 2. Transforming
-let lowercaseString; // Your code here
-let uppercaseString; // Your code here
-let trimmedString; // Your code here
+let lowercaseString; 
+console.log(lowercaseString = text.toLowerCase()); // "learning javascript is fun!"
+let uppercaseString; 
+console.log(uppercaseString = text.toUpperCase()); // "LEARNING JAVASCRIPT IS FUN!"
+let trimmedString; 
+console.log(trimmedString = text.trim()); // "Welcome to the Coding Bootcamp! Learn JavaScript today."
 let replacedString; // Your code here
-
+let newText = text.replace("JavaScript,", "coding,"); // "Welcome to the Coding Bootcamp! Learn coding today."
+console.log(replacedString = newText); // "Welcome to the Coding Bootcamp! Learn coding today."
 // 3. Breaking Apart
-let wordsArray; // Your code here
+let wordsArray; 
+console.log(wordsArray = text.split(" ")); // ["Welcome", "to", "the", "Coding", "Bootcamp!", "Learn", "JavaScript", "today."]
 
 // 4. Retrieving
-let firstCharacter; // Your code here
-let extractedBootcamp; // Your code here
+let firstCharacter; 
+console.log(firstCharacter = trimmedString.charAt(0)); // "W"
+let extractedBootcamp; 
+console.log(extractedBootcamp = trimmedString.slice(16, 25)); // "Bootcamp" 
 
 // Log all results
 console.log({
-  hasJavaScript,
-  codingPosition,
-  startsWithWelcome,
-  endsWithToday,
-  lowercaseString,
-  uppercaseString,
-  trimmedString,
-  replacedString,
-  wordsArray,
-  firstCharacter,
-  extractedBootcamp,
-});
+  hasJavaScript, console.log(text.includes("JavaScript")); // true
+  codingPosition, console.log(text.indexOf("coding")); // 15
+  startsWithWelcome, console.log(text.startsWith("Welcome")); // false
+  endsWithToday, console.log(text.endsWith("today.")); // true
+  lowercaseString, console.log(lowercaseString = text.toLowerCase()); // "learning javascript is fun!"
+  uppercaseString, console.log(uppercaseString = text.toUpperCase()); // "LEARNING JAVASCRIPT IS FUN!"
+  trimmedString, console.log(trimmedString = text.trim()); // "Welcome to the Coding Bootcamp! Learn JavaScript today."
+  replacedString, let newText = text.replace("JavaScript,", "coding,"); // "Welcome to the Coding Bootcamp! Learn coding today."
+console.log(replacedString = newText); // "Welcome to the Coding Bootcamp! Learn coding today."
+  wordsArray, console.log(wordsArray = text.split(" ")); // ["Welcome", "to", "the", "Coding", "Bootcamp!", "Learn", "JavaScript", "today."]
+  firstCharacter, console.log(firstCharacter = trimmedString.charAt(0)); // "W"
+  extractedBootcamp, console.log(extractedBootcamp = trimmedString.slice(16, 25)); // "Bootcamp" 
